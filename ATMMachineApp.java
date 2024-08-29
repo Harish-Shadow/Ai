@@ -35,7 +35,7 @@ class ATMMachine {
         Scanner scanner = new Scanner(System.in);
         int choice = 0;
 
-        do {
+        while (choice != 4) {
             System.out.println("Welcome to the ATM");
             System.out.println("1. Withdraw");
             System.out.println("2. Deposit");
@@ -64,7 +64,7 @@ class ATMMachine {
                 default:
                     System.out.println("Invalid choice. Please try again.");
             }
-        } while (choice != 4);
+        }
 
         scanner.close();
     }
@@ -96,9 +96,9 @@ class ATMMachine {
     }
 }
 
-public class Student {
+public class ATMMachineApp {
     public static void main(String[] args) {
-        BankAccount account = new BankAccount(5000); // Let's start with a balance of 5000
+        BankAccount account = new BankAccount(5000); // Initial balance of 5000
         ATMMachine atm = new ATMMachine(account);
         atm.start();
     }
