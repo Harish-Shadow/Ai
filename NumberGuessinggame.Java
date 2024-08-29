@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class NumberGuessinggame {
 
-    public static void guessingNumberGame() {
+    public static void guessingNumbergame() {
         Scanner sc = new Scanner(System.in);
 
         int number = 1 + (int)(100 * Math.random());
@@ -35,6 +35,6 @@ public class NumberGuessinggame {
     }
 
     public static void main(String[] args) {
-        guessingNumberGame();
+        guessingNumbergame();
     }
 }
